@@ -9,5 +9,7 @@ public class MiniDuckSimulator {
     Duck mallard = new MallardDuck();
 
     mallard.display();
+    mallard.swim();
+    mallard.quack();
   }
 }
