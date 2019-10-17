@@ -1,6 +1,6 @@
 package main.java.com.simulator.version2.ducks;
 
-import main.java.com.simulator.version1.ducks.Duck;
+import main.java.com.simulator.version2.ducks.Duck;
 
 /**
  * RedheadDuck inherits everything from Duck. Must override abstract methods.

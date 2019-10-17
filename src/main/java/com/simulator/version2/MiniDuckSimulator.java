@@ -1,10 +1,11 @@
-package main.java.com.simulator.version1;
+package main.java.com.simulator.version2;
 
 import java.util.ArrayList;
 import java.util.List;
-import main.java.com.simulator.version1.ducks.Duck;
-import main.java.com.simulator.version1.ducks.MallardDuck;
-import main.java.com.simulator.version1.ducks.RedheadDuck;
+import main.java.com.simulator.version2.ducks.Duck;
+import main.java.com.simulator.version2.ducks.MallardDuck;
+import main.java.com.simulator.version2.ducks.RedheadDuck;
+import main.java.com.simulator.version2.ducks.RubberDuck;
 
 /**
  * @version 2.0.0
@@ -18,12 +19,14 @@ public class MiniDuckSimulator {
 
     ducksContainer.add(new MallardDuck());
     ducksContainer.add(new RedheadDuck());
+    ducksContainer.add(new RubberDuck());
 
     ducksContainer
         .forEach(duck -> {
           duck.display();
           duck.swim();
           duck.quack();
+          duck.fly();
           System.out.println(NEXT_LINE);
         });
   }
