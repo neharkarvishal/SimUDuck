@@ -1,7 +1,9 @@
-package main.java.com.simulator.ducks;
+package main.java.com.simulator.version2.ducks;
 
 /**
  * MallardDuck inherits everything from Duck. Must override abstract methods.
+ *
+ * @version 2.0.0
  */
 public class MallardDuck extends Duck {
   public MallardDuck() {
