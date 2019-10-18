@@ -1,6 +1,6 @@
-package main.java.com.simulator.ducks;
+package main.java.com.simulator.version1.ducks;
 
-/*
+/**
  * Interface or Abstract class, which one to use?
  * Consider using abstract classes if any of these statements apply to your situation:
  * 1. In java application, there are some related classes that need to share some lines of code then
@@ -23,7 +23,7 @@ package main.java.com.simulator.ducks;
  * implements its behavior.
  */
 
-/*
+/**
  * Starting point for SimUDuck. The game can show a large variety of
  * duck species swimming and making quacking sounds. The initial designers used standard OOP
  * techniques and created an abstract Duck superclass (this class) from which all other duck types
@@ -39,6 +39,8 @@ package main.java.com.simulator.ducks;
  * create direct instances. We only want instances created from specific sub classes, because only
  * those classes have enough distinct properties and methods to be useful. So this is a form of
  * developer control.
+ *
+ * @version 1.0.0
  */
 public abstract class Duck {
 
