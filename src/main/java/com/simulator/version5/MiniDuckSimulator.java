@@ -1,24 +1,23 @@
 package main.java.com.simulator.version5;
 
 
-//import java.util.HashMap;
-
+import java.util.HashMap;
 import main.java.com.simulator.version5.behaviors.FlyRocketPowered;
 import main.java.com.simulator.version5.ducks.Duck;
 import main.java.com.simulator.version5.ducks.MallardDuck;
-//import main.java.com.simulator.version5.ducks.RedheadDuck;
-//import main.java.com.simulator.version5.ducks.RubberDuck;
+import main.java.com.simulator.version5.ducks.RedheadDuck;
+import main.java.com.simulator.version5.ducks.RubberDuck;
 
 /**
  * @version 5.0.0
  */
 public class MiniDuckSimulator {
 
-  public static final String NEXT_LINE = "\n";
+  private static final String NEXT_LINE = "\n";
 
   public static void main(String[] args) {
 
-    Duck mallard = new MallardDuck();
+    var mallard = new MallardDuck();
 
     mallard.display();
     mallard.performQuack();
@@ -32,8 +31,8 @@ public class MiniDuckSimulator {
     mallard.setFlyBehavior(new FlyRocketPowered());
     mallard.performFly();
 
-    /*
-    HashMap<String, Duck> ducksContainer = new HashMap<String, Duck>();
+
+    var ducksContainer = new HashMap<String, Duck>();
 
     ducksContainer.put("MallardDuck", new MallardDuck());
     ducksContainer.put("RedheadDuck", new RedheadDuck());
@@ -47,6 +46,6 @@ public class MiniDuckSimulator {
           duckObject.performFly();
           System.out.println(NEXT_LINE);
         });
-    */
+
   }
 }

@@ -15,7 +15,7 @@ public class MiniDuckSimulator {
   public static final String NEXT_LINE = "\n";
 
   public static void main(String[] args) {
-    List<Duck> ducksContainer = new ArrayList<Duck>();
+    var ducksContainer = new ArrayList<Duck>();
 
     ducksContainer.add(new MallardDuck());
     ducksContainer.add(new RedheadDuck());

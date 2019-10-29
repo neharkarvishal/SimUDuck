@@ -12,10 +12,10 @@ import main.java.com.simulator.version4.ducks.RubberDuck;
  */
 public class MiniDuckSimulator {
 
-  public static final String NEXT_LINE = "\n";
+  private static final String NEXT_LINE = "\n";
 
   public static void main(String[] args) {
-    HashMap<String, Duck> ducksContainer = new HashMap<String, Duck>();
+    var ducksContainer = new HashMap<String, Duck>();
 
     ducksContainer.put("MallardDuck", new MallardDuck());
     ducksContainer.put("RedheadDuck", new RedheadDuck());
